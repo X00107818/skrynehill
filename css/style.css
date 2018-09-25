@@ -1,0 +1,446 @@
+
+/*general styles*/
+*{padding:0;margin:0;box-sizing:border-box;}
+body{font-family: 'Lato', sans-serif;font-size:0.9em;position:relative;}
+
+section .container{max-width:1000px;}
+h1{font: 2em 'Playfair Display', serif; text-transform:uppercase;}
+h2{font: 1.5em 'Playfair Display', serif; text-align:center; color:#613316; font-weight:lighter; padding:10px 0;text-transform:uppercase;padding-bottom:20px;}
+h3{font-size:1.1em; text-align:center; font-style:italic; font-variant:small-caps; text-transform:capitalize;padding:10px 0;}
+h4{font-size:1.8em;  }
+h5{padding:10px 0;}
+	a{text-decoration:none; color:#34744C;
+	-o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+
+  transition:color .2s ease-out, background 1s ease-in;}
+
+	p{padding:10px 0; font-variant:italic;}
+	p a{font-style:italic; font-variant:small-caps; text-transform:capitalize;}
+	p.txtcenter{text-align:center;}
+	ul{list-style-type:none;}
+	
+	
+/*NAVIGATION STYLES*/	
+	
+nav{background-color:#34744C;
+ width:100%; 
+ height:51px;
+ 
+}
+#logo{position:absolute;
+ top:0;left:0;
+ border:1px solid #613316;}
+
+/*styling links inside unorderedlist including hover and hiding it*/
+.topnav {
+   width:800x;
+   float:right;
+    }
+ .topnav li {
+  float: left;}
+
+.topnav li a{
+  font-size:0.875em;
+  text-transform:uppercase;
+  display: block;
+  color: #DEE8C2;
+  text-align: center;
+  padding: 18px 16px;
+  line-height:51px;
+  text-decoration: none;
+  }
+
+.topnav a:hover, .topnav a#home:hover,.topnav a.active:hover{
+  background-color:#DEE8C2;
+  color: #613316;
+  
+}
+.topnav li a {display: none;}
+
+/*menu icon  and logo image styles, hiding menu icon*/
+ .topnav a.icon {
+	 font-size:1.3em;
+	 padding:0;
+	 display: block;
+	 line-height:51px;
+	 width:51px;
+     float: right;
+     height:51px;
+
+	 }
+  .topnav a.icon:hover{background-color:transparent; color:#fff;}
+  
+ 
+ nav a#logo{height:51px;}
+.topnav a.icon i.fa-times{display:none;}
+
+  
+ 
+
+/*taking home link out of the flow to be displayed next to logo and hide it*/
+.topnave a.active,.topnav a.active#home{background-color:#04cb98; color:#613316;}
+.topnav a.active#home {
+  position:absolute;
+  top:0; left:100px;
+   line-height:51px;
+   height:51px;
+   border:1px solid #613316;
+  border-width:1px 1px 0 1px;
+  display: none;
+  
+}
+
+ 
+
+/*styling copyright*/
+li#bottomcenter a{width:100%;position:absolute; bottom:5px; text-align:center; color:#b5c877; text-transform:capitalize; display:none;}
+
+
+ }
+
+/*expanded navigation after click styles*/
+
+ .topnav.responsive li#bottomcenter a{display:inline;}
+ .topnav.responsive a.icon i.fa-bars{display:none;}
+ .topnav.responsive a.icon i.fa-times{display:inline;}
+
+.topnav.responsive {
+    float:none;
+	-webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+	-webkit-transition-duration: .7s;
+	     -o-transition-duration: .7s;
+	        transition-duration: .7s;
+	-webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+	     -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+	        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+	position: absolute; top:0; z-index:2; min-height:100vh;
+    background-color:#34744C;
+  }
+
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 5px;
+    top: 0; 
+	width:50px;
+    color:#fff;
+	
+	}
+	
+   
+  .topnav.responsive ul,.topnav.responsive li{width:100vw; float:none; } 
+
+  .topnav.responsive a#home{position:relative; left:0; display:block; }
+  .topnav.responsive a, .topnav.responsive a.active#home{
+	position:relative;
+	top:50px; 
+    font-size:0.8em;
+	width:80vw;
+    margin:10px auto;
+	border-radius:50px;
+	float:none;  
+    display: block;
+    text-align: center;
+	padding:5px 0;
+  }
+ .topnav.responsive a.active{background:#04cb98 url(../images/logo.fw.png) 10px no-repeat;} 
+ .topnav.responsive a.active:hover{background:#04cb98 url(../images/logo.fw.png) 10px no-repeat;}
+  
+  
+   .topnav.responsive a.icon:hover {
+	 border:none;
+	 color:#fff;
+  }
+   .topnav.responsive a:hover{background-color:transparent; color:#fff;}
+   
+   /*END OF NAVIGATION STYLES*/
+   
+
+/*banner styles for all pages*/
+
+#banner{width:100%; box-sizing:border-box; height:500px; background: linear-gradient( rgba(67,195,109, 0.1), rgba(67,195,109, 0.1) ),url(../images/bannerbw.jpg) no-repeat; background-size:cover; position:relative; border:20px solid #613316;}
+
+.bannerpages{width:100%; height:250px;  position:relative;  border:20px solid #613316; background-position:center; background-size:cover; background-repeat:no-repeat;}
+#about{background-color:#613316;}
+#sessionalservice{background: linear-gradient( rgba(67,195,109, 0.3), rgba(67,195,109, 0.1) ),url(../images/gallery/indoor/playactivity2.jpg) no-repeat; background-size:cover;}
+#summercamp{background: linear-gradient( rgba(67,195,109, 0.1), rgba(67,195,109, 0.1) ),url(../images/gallery/outdoor/galleryforesttrip1.jpg) no-repeat; background-size:cover; }
+#summercamp #bannertxt{ color:#613316;}
+.contactbanner{width:100%; height:250px; background-size:cover; position:relative; border:20px solid #613316;  background-color:#e6b43c;}
+#contactinfo{border-bottom:none;}
+
+#bannertxt{text-align:center; position:absolute; width:100%; top:30%; color:#f4f7e1}
+#bannertxt h2{margin-bottom:40px;color:#f4f7e1; font-size:1.3em; text-transform:capitalize;}
+#bannertxt a.button{padding:10px; color:#DEE8C2; background:#34744C; border:1px solid #b5c877; border-radius:50px;  text-transform:uppercase; font-size:0.675em;letter-spacing:0.1em; margin-top:50px;}
+#contactinfo a.button{padding:10px; color:#DEE8C2; background:#34744C; border:1px solid #b5c877; border-radius:50px;  text-transform:uppercase; font-size:0.675em;letter-spacing:0.1em; margin-top:50px;}
+#openinghrs p{padding:10px 0px;}
+.contactheadings{font-size:0.9em;}
+
+
+
+
+/* bouncing ball */
+#wellcome{
+	background-image:url(../images/wellcome.fw.png);
+	background-size:cover;
+	width:90px;
+	height:90px;
+	position:absolute;
+	bottom:0;
+	
+	-webkit-animation: bounce 0.5s cubic-bezier(.5,.5,0.05,1),moveX 3.05s linear alternate,rotate 3.05s linear ;animation: bounce 0.5s cubic-bezier(.5,.5,0.05,1),moveX 3.05s linear alternate,rotate 3.05s linear ;
+
+  -webkit-animation-direction: alternate,alternate,alternate;
+
+          animation-direction: alternate,alternate,alternate;
+  -webkit-animation-iteration-count: 13,4,4;
+          animation-iteration-count: 13,4,4;
+  -webkit-animation-delay:0s,0s,6s;
+          animation-delay:0s,0s,6s;
+  
+ }
+  
+  
+@-webkit-keyframes rotate{
+	  
+   from{
+        -webkit-transform:  rotate(0deg);
+                transform:  rotate(0deg);    
+    }
+    to{
+        -webkit-transform:  rotate(360deg);
+                transform:  rotate(360deg);  
+    }
+  
+ }
+  
+  
+@keyframes rotate{
+	  
+   from{
+        -webkit-transform:  rotate(0deg);
+                transform:  rotate(0deg);    
+    }
+    to{
+        -webkit-transform:  rotate(360deg);
+                transform:  rotate(360deg);  
+    }
+  
+ }
+  @-webkit-keyframes bounce { 
+  from { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+  to   { -webkit-transform: translate3d(0, -200px, 0); transform: translate3d(0, -200px, 0); }
+ 
+  
+}
+  @keyframes bounce { 
+  from { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+  to   { -webkit-transform: translate3d(0, -200px, 0); transform: translate3d(0, -200px, 0); }
+ 
+  
+}
+
+@-webkit-keyframes moveX {
+  from { left: 0;} to { left: calc(100% - 90px); }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: calc(100% - 90px);  }
+   
+    }
+	
+
+
+
+/*sections general styles and background styling for individual sections */
+section{ width:100%; padding:10px 5px; color:#f7f9e7; font-size:0.8em; text-transform:uppercase; min-height:250px;}
+.container{width:95%; margin:0 2.5%; max-width}
+section h5{display:inline; color:#613316;}
+section a{color:#613316;}
+#servicesbg,#managementbg,#teambg,#ECCEbg,#directionsbg,#summercampbg{background-color:#e3c955;}
+#testimonialbg,#ourwaysbg,#gallerybg,#contactform{background-color:#b5c877; text-align:center;}
+
+#whowearebg{background-color:#b5c877;}
+section#directionsbg h2{display:inline; color:#613316;}
+
+
+
+/*image styles inside service section*/
+.servicesimg{width:100%; height:200px; margin-top:20px; background-size:cover; background-repeat:no-repeat;background-position:center;}
+#sessional{background-image:url(../images/services/sessionalservices.jpg); border:2px solid #fdfd96 }
+#camp{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/banner.jpg); border:2px solid #fdfd96; }
+
+/*image styles inside testimonials section*/
+.framedimg{width:60%; height:160px; margin:10px auto; background-size:cover; background-repeat:no-repeat;background-position:center; border:2px solid #9db72d; border-radius:100px;  }
+
+#testimonial1{background-image:url(../images/testimonials/happychild1.jpg);}
+#testimonial2{background-image:url(../images/testimonials/happychild2.jpg);}
+#testimonial3{background-image:url(../images/testimonials/happychild3.jpg);}
+
+/*image styles inside about section*/
+.aboutimg{width:100%; height:100px; margin-top:20px; background-size:cover; background-repeat:no-repeat;background-position:center;}
+#aboutsection1{background-color:#04cb98; text-align:center;border:2px solid #B8AF85;}
+
+#aboutsection2{background:url(../images/about/alisonking.png);width:33.3%; height:100px; margin:0 auto; background-size:cover; }
+
+#aboutsection3 {border:2px solid #fdfd96;overflow:hidden;}
+
+#aboutsection3 div{ width:33.3%; height:120px; text-align:center; float:left; }
+video{width:100%; height:210px;}
+.teamimg{width:100%; height:100px; background-image:url(../images/about/alisonking.png); background-repeat:no-repeat; background-size:cover;}
+/*buttefly image decoration styles*/
+section.section{position:relative;}
+#butterflyright{background:url(../images/elfbutterfly3.png ); width:70px; height:50px; background-size:cover; position:absolute; bottom:50px;right:0;}
+#butterflyleft{background:url(../images/elfbutterfly.png );  width:70px; height:50px; background-size:cover; position:absolute; bottom:50px; left:0;}
+
+/*gallery images ECCE and summer camp*/
+#sessionalcoverindoors{background-image:url(../images/gallery/indoor/indoorcover.jpg);}
+#sessionalcoveroutdoors{background-image:url(../images/gallery/enviroment/enviromentcover.jpg);}
+
+/*contact page styles*/
+
+.bannerpages{min-height:220px;}
+#contactinfo{overflow:hidden; width:100%;}
+#contactinfo h1,#openinghrs h1,#directionsbg h1{text-align:center;}
+
+.contactrow{overflow:hidden; width:100%;}
+.contactheadings{width:20%;float:left;}
+.contacttxt{width:80%; float:right; text-align:left;padding-top:12px;}
+
+
+
+
+#map{width:100%;height:200px;}
+
+/*form styles*/
+fieldset{border:none;}
+legend{text-align:center;}
+#validform input,textarea{width:98%; padding:8px 5px; border-radius:2%;background-color:#DEE8C2;margin-bottom:5px;}
+#validform textarea{width:98%; padding:8px 5px; border-radius:2%; margin-top:5px;}
+#validform input#submit{width:30%; margin:10px 35%; padding:10px; color:#DEE8C2; background:#34744C; border:1px solid #b5c877; border-radius:50px;  text-transform:uppercase; font-size:0.675em;letter-spacing:0.1em; margin-top:50px;}
+
+/*validation css*/
+#validform input:invalid:focus{border: 2px solid red;}
+#validform textarea:invalid:focus{border: 2px solid red;}
+
+#validform input:valid{border: 2px solid #000;}
+.showValHint{width:98%;padding:5px; background:#fff; border:1 px solid red; display:none; color:red;}
+.invalid_bg:focus:invalid + .showValHint {
+display: inline;}
+/*end of validation*/
+
+/*footercsss*/
+
+footer{width:100%;height:220px;
+position:absolute;
+bottom:-220px; 	
+padding-top:10px;
+
+text-align:center;
+background-color:#34744C;
+color:#DEE8C2;
+}
+footer a{font-size:0.7em;color:#b5c877;}
+ul#footer li{padding:0 10px; }
+ul#footer li a{color:#cfbe5a;}
+li#left{float:left;}
+li#right{float:right;}
+li#bottomcenter{display:none;}
+
+#thanks{background-color:#e3c955; line-height:70vh; text-align:center;}
+
+/*media query*/
+@media screen and (min-width: 500px){
+
+.topnav.responsive a, .topnav.responsive a.active#home, .topnav.responsive a.active{width:70vw;}
+}
+@media screen and (min-width: 700px){
+
+	.container{width:70%;margin:0 auto;}
+	.bannerpages{height:500px;}
+	
+	section{padding:50px 0;
+	font-size:0.875em;
+	overflow:hidden;}
+	section#ourwaysbg, section#ECCEbg,section#summercampbg{height:250px;}
+	section#openinghrs{padding-top:10px;}
+	video{height:460px;}
+	
+	
+	#servicesbg .left,#managementbg .left,#teambg .left,#gallerybg .left,#ourwaysbg .left{width:45%;float:left;}
+	#servicesbg .right,#managementbg .right,#teambg .right,#gallerybg .right,#ourwaysbg .right{width:45%;float:right;}
+	#managementbg{border-bottom:2px solid rgba(255,255,0,.2);}
+   
+	.teamimg{height:220px;}
+	#testimonialbg .left{width:30%; float:left; margin-right:3%;}
+	.framedimg{width:100%; margin-top:20px;}
+	#aboutsection1,#aboutsection3{height:250px;}#aboutsection2{padding-top:20px; height:250px;}
+	section#contactinfo.contactbanner, section#openinghrs.contactbanner{width:50%; height:270px; float:left; font-size:0.8em; }
+	#contactinfo{border-bottom:20px solid #613316; padding:10px;}
+	#openinghrs{border-left:none;}
+	#directionsbg h1,#contactinfo h1,#openinghrs h1{text-align:left;}
+	footer{padding-top:20px;}
+	
+     .contactbanner p#openinginfo{ padding:10px;}
+     #openinghrs h1{padding-left:10px;}
+
+}
+
+@media screen and (min-width: 920px){
+	/*hiding mobile menu icon, showing all nav links*/
+	.topnav a.icon{display:none;}
+	.topnav li a {display: inline;}
+	.topnav  a.active#home,.topnav a.active{display:inline-block; padding:0 16px;}
+	footer{height:280px;position:absolute;bottom:-280px;}
+
+	#whowearebg .left{width:45%;float:left;} 
+	#whowearebg .right{width:45%;float:right; margin-top:10px}
+	{width:45%;float:right;}
+	a#footerbutton{display:block; color:#34744C; background:#DEE8C2; width:100px; margin:0 auto; padding:3px;  border:1px solid #b5c877; border-radius:50px; text-transform:uppercase;letter-spacing:0.1em; margin-top:5px;font-size:1em;}
+    
+	a#footerbutton:before,a#footerbutton:after {
+ background-color: #DEE8C2;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+footer{height:300px;position:absolute;bottom:-300px;}
+a#footerbutton:before {
+ right: 5em;
+ margin-left: -50%;
+}
+a#footerbutton:after {
+ left: 5em;
+ margin-right: -50%;
+}
+}
+
+@media screen and (min-width: 1045px){
+	body{font-size:1em;}
+	section{font-size:.875em;}
+	footer a:hover{color:#613316;}
+	p a:hover{color:#34744C;}
+	
+	#bannertxt a.button:hover,#contactinfo a.button:hover{ 
+	background:#DEE8C2;color:#34744C;}
+		#validform input#submit:hover{
+			background:#DEE8C2;color:#34744C; 
+			-o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+
+  transition:color .2s ease-out, background 1s ease-in;}
+	a#footerbutton:hover{color:#DEE8C2; background:#34744C; transform:scale(1.1);}
+	#aboutsection2.right,#aboutsection1.right{height:400px;}
+	#managementbg .left{padding-top:100px;}
+	#aboutsection3{height:370px;}
+		.teamimg{height:350px;}
+}
+
